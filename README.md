@@ -19,6 +19,15 @@
 * 声卡 瑞昱  @ 英特尔 High Definition Audio 控制器
 * 网卡 瑞昱 RTL8168/8111/8112 Gigabit Ethernet Controller / 戴尔
 
+### 支持型号
+理论上，相同配置（主板、CPU）的 Dell 品牌机或 DIY 攒机均可直接使用此 EFI。
+已在如下设备中测试可用。
+
+* Dell Vostro 3670
+* Dell 成就 3670
+* Dell 成铭 3980
+
+
 ### 支持功能
 
 * 显卡、声卡、有线网卡正常
