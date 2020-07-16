@@ -4,7 +4,7 @@
 
 **OpenCore Version**： [0.5.9](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.5.9)
 
-**macOS Version**：macOS Catalina 10.15.5
+**macOS Version**：macOS Catalina 10.15.6
 
 ### 配置单
 
