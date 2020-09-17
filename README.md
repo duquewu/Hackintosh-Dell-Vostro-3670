@@ -1,5 +1,7 @@
 # Hackintosh:  Dell-Vostro-3670
 
+## 简介
+
 ### 引导
 
 **OpenCore Version**： [0.5.9](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.5.9)
@@ -44,3 +46,37 @@
 **Hackintool**
 
 ![Hackintool Capture1](Screenshots/Hackintool.png)
+
+
+
+## FAQ
+###  BIOS 设置
+
+#### [#](https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html#disable)Disable
+
+- Fast Boot
+- Secure Boot
+- Serial/COM Port
+- Parallel Port
+- VT-d (can be enabled if you set `DisableIoMapper` to YES)
+- CSM
+- Thunderbolt(For initial install, as Thunderbolt can cause issues if not setup correctly)
+- Intel SGX
+- Intel Platform Trust
+- CFG Lock (MSR 0xE2 write protection)(**This must be off, if you can't find the option then enable both `AppleCpuPmCfgLock` and `AppleXcpmCfgLock` under Kernel -> Quirks. Your hack will not boot with CFG-Lock enabled**)
+
+#### [#](https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html#enable)Enable
+
+- VT-x
+- Above 4G decoding
+- Hyper-Threading
+- Execute Disable Bit
+- EHCI/XHCI Hand-off
+- OS type: Windows 8.1/10 UEFI Mode
+- DVMT Pre-Allocated(iGPU Memory): 64MB
+- SATA Mode: AHCI
+
+### 独显
+
+参见 [#4](https://github.com/geek5nan/Hackintosh-Dell-Vostro-3670/issues/4)
+
