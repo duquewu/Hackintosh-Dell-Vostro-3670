@@ -4,9 +4,9 @@
 
 ### 引导
 
-**OpenCore Version**： [0.5.9](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.5.9)
+**OpenCore Version**： [0.6.3](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.6.3)
 
-**macOS Version**：macOS Catalina 10.15.6
+**macOS Version**：Catalina 10.15.6 ~ Big Sur 11.0.1
 
 ### 配置单
 
@@ -45,11 +45,21 @@
 
 **Hackintool**
 
-![Hackintool Capture1](Screenshots/Hackintool.png)
+![Hackintool Capture1](Screenshots/Misc.png)
 
+### config.plist
 
+此项目中存放了以下四个 OC 配置文件，请按需选用
+
+| 配置                 | 说明                           |
+| -------------------- | ------------------------------ |
+| config.plist         | 标配（单显示器、无 WiFi/蓝牙） |
+| config-dw1820a.plist | 标配 + WiFi/蓝牙               |
+| config-rx560.plist   | 标配 + 独显（多显示器）        |
+| config-full.plist    | 标配 + dw1820a + rx560         |
 
 ## FAQ
+
 ###  BIOS 设置
 
 #### [#](https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html#disable)Disable
@@ -80,3 +90,8 @@
 
 参见 [#4](https://github.com/geek5nan/Hackintosh-Dell-Vostro-3670/issues/4)
 
+#### 关闭开机日志
+
+去除 **config.plist**`/NVRAM/7C436110-AB2A-4BBB-A880-FE41995C9F82/boot-args` 中的如下参数
+
+* `-v keepsyms=1 debug=0x100`
