@@ -47,6 +47,10 @@
 
 ![Hackintool Capture1](Screenshots/Misc.png)
 
+**Sensors**
+
+![Sensors](Screenshots/Sensors.jpg)
+
 ### config.plist
 
 此项目中存放了以下四个 OC 配置文件，请按需选用
